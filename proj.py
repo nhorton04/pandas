@@ -25,3 +25,10 @@ print(f"is Amazon in the list of companies - - - {'Amazon' in companies}")
 print(f"should say 'False' unless your mom is in the company - - - {'Your mom' in companies}")
 
 print(companies.isnull())
+
+c1= {'Name': ['Amazon', 'GE', 'Toyota', 'Twitter', 'Ford', 'Marriot'],
+            'Founded': [1994, 1923, 1937, 2006, 1903, 1927],
+             'Price': [852, 111.2, 112, 15.2, 12.5, 88.31]}
+
+companies = pd.DataFrame(c1, columns=['Name', 'Founded', 'Price'])
+print(companies)
